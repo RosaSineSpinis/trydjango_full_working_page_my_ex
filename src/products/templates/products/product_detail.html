@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>In App template: {{ object.title }}</h1>
+<p>{% if object.description %}{{ object.description }}{% else %}Description coming soon{% endif %}</p>
+<h3><a href="{% url 'products:product_delete' my_id=object.id %}">Delete product</a><h3>
+{{ object.price }}
+{% endblock %}
+<!--<h3><a href="{% url 'product_delete' %}">Delete product</a></h3>-->
+<!--<p><a href="{{ object.get_absolute_url }}delete/"> Delete </a></p>-->

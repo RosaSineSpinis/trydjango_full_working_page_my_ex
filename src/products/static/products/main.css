@@ -1,0 +1,12 @@
+body {
+    background: #cacff6;
+    color: black;
+}
+
+.box_list{
+    background: #fff;
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 6px;
+}
